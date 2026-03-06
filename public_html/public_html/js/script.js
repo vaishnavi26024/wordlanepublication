@@ -1,5 +1,25 @@
 // Enhanced Loading Screen Animation with Left-to-Right Letter Animation
 document.addEventListener("DOMContentLoaded", () => {
+  // Check if returning from discover-books page
+  const urlParams = new URLSearchParams(window.location.search);
+  const returnTo = urlParams.get('return');
+  
+  if (returnTo === 'publish') {
+    // Skip loading screen and scroll to publish section
+    const loadingScreen = document.getElementById("loading-screen");
+    const mainWebsite = document.getElementById("main-website");
+    loadingScreen.style.display = "none";
+    mainWebsite.classList.add("show");
+    
+    setTimeout(() => {
+      const publishSection = document.getElementById("publish");
+      if (publishSection) {
+        publishSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
+    return;
+  }
+  
   const loadingScreen = document.getElementById("loading-screen")
   const mainWebsite = document.getElementById("main-website")
   const letters = document.querySelectorAll(".letter")
@@ -943,3 +963,84 @@ const performanceObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll(".book, .process-card, .footer-column").forEach((el) => {
   performanceObserver.observe(el)
 })
+/* LANGUAGE DROPDOWN FUNCTION */
+
+const languageToggle = document.getElementById("languageToggle");
+const languageMenu = document.getElementById("languageMenu");
+const seeAll = document.getElementById("seeAllLang");
+const moreLanguages = document.getElementById("moreLanguages");
+
+
+// OPEN / CLOSE DROPDOWN
+languageToggle.addEventListener("click", function(e){
+    e.stopPropagation();
+    languageMenu.style.display =
+        languageMenu.style.display === "block" ? "none" : "block";
+});
+
+
+// SEE ALL LANGUAGES
+seeAll.addEventListener("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    moreLanguages.style.display = "block";
+    seeAll.style.display = "none";
+});
+
+
+// PREVENT CLOSE WHEN CLICKING INSIDE
+languageMenu.addEventListener("click", function(e){
+    e.stopPropagation();
+});
+
+
+// CLOSE LANGUAGE DROPDOWN WHEN CLICKING OUTSIDE
+document.addEventListener("click", function(){
+    languageMenu.style.display = "none";
+});
+
+
+
+/* DISCOVER POPUP CLICK FUNCTION */   // #CHANGE
+
+const discoverBtn = document.getElementById("discoverBtn");
+const writerBtn = document.getElementById("writerBtn");
+
+const discoverPopup = document.getElementById("discoverPopup");
+const writerPopup = document.getElementById("writerPopup");
+
+
+// OPEN DISCOVER BOOKS
+discoverBtn.addEventListener("click", function(e){
+    e.stopPropagation();
+    discoverPopup.style.display = "flex";
+    writerPopup.style.display = "none";
+});
+
+
+// OPEN WRITER
+writerBtn.addEventListener("click", function(e){
+    e.stopPropagation();
+    writerPopup.style.display = "flex";
+    discoverPopup.style.display = "none";
+});
+
+
+// CLOSE WHEN CLICK OUTSIDE
+document.addEventListener("click", function(){
+    discoverPopup.style.display = "none";
+    writerPopup.style.display = "none";
+});
+
+
+// PREVENT CLOSE WHEN CLICKING INSIDE POPUP
+discoverPopup.addEventListener("click", function(e){
+    e.stopPropagation();
+});
+
+writerPopup.addEventListener("click", function(e){
+    e.stopPropagation();
+});
+// Select all hidden language links
+const languageLinks = document.querySelectorAll('#moreLanguages a');

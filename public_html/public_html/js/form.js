@@ -194,5 +194,57 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// SHOW ALL LANGUAGES  #CHANGE
+
+/*const seeAll = document.getElementById("seeAllLang");
+
+if(seeAll){
+
+seeAll.addEventListener("click", function(){
+
+const more = document.querySelector(".more-languages");
+
+if(more.style.display === "block"){
+more.style.display = "none";
+}else{
+more.style.display = "block";
+}
+
+});
+
+}
+*/
+// LANGUAGE DROPDOWN FUNCTION  #CHANGE
+
+const languageToggle = document.getElementById("languageToggle");
+const languageMenu = document.getElementById("languageMenu");
+const seeAll = document.getElementById("seeAllLang");
+const moreLanguages = document.getElementById("moreLanguages");
 
 
+// OPEN / CLOSE DROPDOWN
+languageToggle.addEventListener("click", function(e){
+    e.stopPropagation(); // #CHANGE
+    languageMenu.style.display =
+        languageMenu.style.display === "block" ? "none" : "block";
+});
+
+
+// PREVENT DROPDOWN FROM CLOSING WHEN CLICKING INSIDE
+languageMenu.addEventListener("click", function(e){
+    e.stopPropagation();  // #CHANGE
+});
+
+
+// SEE ALL LANGUAGES
+seeAll.addEventListener("click", function(e){
+    e.stopPropagation();  // #CHANGE
+    moreLanguages.style.display =
+        moreLanguages.style.display === "block" ? "none" : "block";
+});
+
+
+// CLOSE WHEN CLICKING OUTSIDE
+document.addEventListener("click", function(){
+    languageMenu.style.display = "none";
+});
