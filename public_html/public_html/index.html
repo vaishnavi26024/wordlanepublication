@@ -12,6 +12,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- #NAV_ICON -->
 </head>
 <body>
     <!-- Enhanced Loading Screen -->
@@ -91,19 +93,80 @@
                 </div>
 
                 <!-- Desktop Navigation -->
-                <nav class="navigation">
-                    <a href="#about" class="nav-link">About Us</a>
-                    <a href="#process" class="nav-link">Process</a>
-                    <a href="#book" class="nav-link">Books</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="cart-icon">
-                        <a href="html/form.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="8" cy="21" r="1"></circle>
-                            <circle cx="19" cy="21" r="1"></circle>
-                            <path d="m2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                        </svg></a>
-                    </div>
-                </nav>
+                <!-- Desktop Navigation -->
+<nav class="navigation">
+
+    <a href="#about" class="nav-link">About Us</a>
+    <a href="#process" class="nav-link">Process</a>
+    <a href="#book" class="nav-link">Books</a>
+
+    <!-- CONTACT ICON -->
+    <a href="#contact" class="nav-link"> <!-- #CHANGE -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 
+            19.79 19.79 0 0 1-8.63-3.07 
+            19.5 19.5 0 0 1-6-6 
+            19.79 19.79 0 0 1-3.07-8.67 
+            A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 
+            1.72 12.84 12.84 0 0 0 .7 2.81 
+            2 2 0 0 1-.45 2.11L8.09 10.91 
+            a16 16 0 0 0 6 6l1.99-1.27 
+            a2 2 0 0 1 2.11-.45 
+            12.84 12.84 0 0 0 2.81.7 
+            A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+    </a>
+
+    <!-- LOGIN ICON -->
+    <a href="login.html" class="nav-link"> <!-- #CHANGE -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+    </a>
+
+    <!-- LANGUAGE DROPDOWN -->
+<!-- LANGUAGE DROPDOWN --> <!-- #CHANGE -->
+
+<div class="language-dropdown">
+
+    <!-- GLOBAL ICON BUTTON -->
+    <button id="languageToggle" class="language-btn">
+        🌐 Language
+    </button>
+
+    <!-- DROPDOWN MENU -->
+    <div id="languageMenu" class="language-menu">
+
+        <!-- INITIAL LANGUAGES -->
+<a href="#">English</a>
+<a href="#">हिन्दी</a>
+<a href="#">मराठी</a>
+
+<!-- SEE ALL BUTTON -->
+<a href="#" id="seeAllLang">See All</a>
+
+<!-- HIDDEN LANGUAGES -->
+<div id="moreLanguages" style="display:none;">
+
+    <a href="#">తెలుగు</a>
+    <a href="#">বাংলা</a>
+    <a href="#">भोजपुरी</a>
+    <a href="#">தமிழ்</a>
+    <a href="#">ಕನ್ನಡ</a>
+    <a href="#">اردو</a>
+    <a href="#">ગુજરાતી</a>
+    <a href="#">മലയാളം</a>
+    <a href="#">संस्कृतम्</a>
+    <a href="#">سنڌी</a>
+    <a href="#">नेपाली</a>
+    <a href="#">ଓଡ଼ିଆ</a>
+
+</div>
+
+    </div>
+
+</nav>
 
                 <!-- Enhanced Hamburger Menu Button -->
                 <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
@@ -503,23 +566,67 @@
             <div class="curve-bg-2"></div>
             
             <!-- Top section with call-to-action -->
-            <div class="footer-top">
-                <div class="container">
-                    <div class="cta-section">
-                        <h2 class="cta-title">READY TO PUBLISH YOUR BOOK</h2>
-                        <p class="cta-subtitle">SCHEDULE A CONSULTATION CALL WITH OUR PUBLISHING EXPERT</p>
-                        
-                        <div class="cta-buttons">
-                            <a href="https://wa.me/918677975182?text=Hello, I want to publish a book" class="contact-email"><button class="btn-primary">
-                                CONTACT WITH OUR<br>PUBLISHING EXPERT
-                            </button></a>
-                            <a href="html/publishform.html" style="text-decoration: none;"><button class="btn-secondary">
-                                PUBLISH BOOK YOURSELF
-                            </button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="footer-top" id="publish">
+    <div class="container">
+
+        <div class="cta-section">
+
+            <h2 class="cta-title">READY TO PUBLISH YOUR BOOK</h2>
+
+<p class="cta-subtitle">
+    SCHEDULE A CONSULTATION CALL WITH OUR PUBLISHING EXPERT
+</p>
+
+<!-- ORIGINAL BUTTONS -->
+
+<div class="cta-buttons">
+
+    <a href="https://wa.me/918677975182?text=Hello, I want to publish a book" class="contact-email">
+        <button class="btn-primary">
+            CONTACT WITH OUR<br>PUBLISHING EXPERT
+        </button>
+    </a>
+
+    <a href="html/publishform.html" style="text-decoration: none;">
+        <button class="btn-secondary">
+            PUBLISH BOOK YOURSELF
+        </button>
+    </a>
+
+</div>
+
+
+<!-- NEW DISCOVER BUTTONS -->
+
+<div class="discover-buttons">
+
+
+    <!-- DISCOVER BOOKS -->
+
+    <div class="discover-wrapper">
+
+        <a href="html/discover-books.html?return=publish" style="text-decoration: none;">
+            <button id="discoverBtn" class="discover-btn">
+                DISCOVER BOOKS
+            </button>
+        </a>
+
+    </div>
+
+
+
+    <!-- FOR WRITERS -->
+
+    <div class="discover-wrapper">
+
+        <a href="html/for-writers.html?return=publish" style="text-decoration: none;">
+            <button id="writerBtn" class="discover-btn">
+                FOR WRITERS
+            </button>
+        </a>
+
+    </div>
+</div>
 
             <!-- Bottom section with links and contact info -->
             <div class="footer-bottom">
@@ -588,6 +695,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
     <script src="js/script.js"></script>
  </body>
 </html>
