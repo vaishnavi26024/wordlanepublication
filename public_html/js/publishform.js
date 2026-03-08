@@ -347,3 +347,32 @@ function resetForm() {
   // Focus on first input
   document.getElementById("authorName").focus()
 }
+/* LANGUAGE DROPDOWN FUNCTION */  // #CHANGE
+
+const languageToggle = document.getElementById("languageToggle");
+const languageMenu = document.getElementById("languageMenu");
+
+languageToggle.addEventListener("click", function(e){
+    e.stopPropagation();
+    languageMenu.style.display =
+        languageMenu.style.display === "block" ? "none" : "block";
+});
+
+
+/* SEE ALL LANGUAGES */
+
+const seeAll = document.getElementById("seeAllLang");
+const moreLanguages = document.getElementById("moreLanguages");
+
+seeAll.addEventListener("click", function(e){
+    e.stopPropagation();
+    moreLanguages.style.display =
+        moreLanguages.style.display === "block" ? "none" : "block";
+});
+
+
+/* CLOSE DROPDOWN WHEN CLICK OUTSIDE */
+
+document.addEventListener("click", function(){
+    languageMenu.style.display = "none";
+});
