@@ -25,29 +25,29 @@
         }
         
         .header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin-bottom: 50px;
         }
         
         .header h1 {
             font-size: 3rem;
             color: #1b3fa0;
-            margin-bottom: 20px;
+            margin: 0;
         }
         
-        .back-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #1b3fa0;
-            color: white;
+        .back-arrow {
+            font-size: 3rem;
+            color: #1b3fa0;
             text-decoration: none;
-            border-radius: 6px;
-            margin-bottom: 30px;
-            transition: background 0.3s;
+            transition: transform 0.3s;
+            font-weight: 900;
+            line-height: 1;
         }
         
-        .back-btn:hover {
-            background: #0f2870;
+        .back-arrow:hover {
+            transform: translateX(-5px);
         }
         
         .content-grid {
@@ -100,16 +100,18 @@
 </head>
 <body>
     <div class="container">
-        <a href="../index.html?return=publish" class="back-btn">← Back to Home</a>
-        
         <div class="header">
+            <a href="../index.html?return=publish" class="back-arrow">←</a>
             <h1>Discover Books</h1>
+            <div style="width: 3rem;"></div>
         </div>
         
         <div class="content-grid">
             <div class="section">
                 <h2>Word Lane Picks</h2>
-                <a href="bestsellers.html">Bestsellers</a>
+               <a href="https://www.amazon.in/s?i=merchant-items&me=A3L7SUC7OV4IPG&s=exact-aware-popularity-rank&fs=true&qid=1773209878&xpid=cRlNUE28DQPxL&ref=sr_st_exact-aware-popularity-rank&ds=v1%3AXVb6fjhRuhWb7ipJv9SPrXRl4dai7%2Bovvjg8QRn3ArY">
+Bestsellers
+</a>
                 <a href="#">Free Shipping</a>
             </div>
             
@@ -118,7 +120,7 @@
                 <a href="#">Literature & Fiction</a>
                 <a href="#">Business, Investing & Management</a>
                 <a href="#">Biographies & Autobiographies</a>
-                <a href="#">Self-Help</a>
+                <a href="self-help.html">Self-Help</a>
                 <a href="#">Poetry</a>
                 <a href="#">History & Politics</a>
                 <a href="#">References & Study Guides</a>
