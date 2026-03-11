@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business & Leadership Books - Word Lane Publication</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#E8E8E8;
+color:#333;
+padding:2rem;
+min-height:100vh;
+}
+
+.container{
+max-width:1400px;
+margin:0 auto;
+}
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin-bottom:3rem;
+}
+
+.back-arrow{
+font-size:3rem;
+color:#00008B;
+text-decoration:none;
+transition:transform 0.3s;
+font-weight:900;
+line-height:1;
+}
+
+.back-arrow:hover{
+transform:translateX(-5px);
+}
+
+h1{
+text-align:center;
+font-size:2.5rem;
+margin:0;
+color:#00008B;
+}
+
+/* FIXED GRID */
+
+.books-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,200px));
+justify-content:center;
+gap:2rem;
+}
+
+/* BOOK CARD */
+
+.book-card{
+background:#00008B;
+border-radius:8px;
+padding:1rem;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+transition:transform 0.3s ease;
+cursor:pointer;
+}
+
+.book-card:hover{
+transform:translateY(-5px);
+}
+
+.book-cover{
+width:100%;
+height:280px;
+background:#F5F5F5;
+border:3px solid #B0E0E6;
+border-radius:4px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:1rem;
+overflow:hidden;
+}
+
+.book-cover img{
+width:100%;
+height:100%;
+object-fit:contain;
+}
+
+.book-title{
+font-size:0.95rem;
+font-weight:600;
+color:#ffffff;
+margin-bottom:0.5rem;
+min-height:40px;
+}
+
+.book-author{
+font-size:0.85rem;
+color:#e0e0e0;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.books-grid{
+grid-template-columns:repeat(auto-fit,minmax(150px,150px));
+justify-content:center;
+gap:1rem;
+}
+
+h1{
+font-size:1.8rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<a href="discover-books.html" class="back-arrow">←</a>
+
+<h1>Business & Leadership Books</h1>
+
+<div style="width:2rem;"></div>
+
+</div>
+
+<div class="books-grid">
+
+<!-- BOOK 1 -->
+
+<a href="https://www.amazon.in/CHANAKYA-CHAKRA-ART-SUCCESS-GOVERNANCE/dp/B0FHBQNKZ7/ref=sr_1_42?dib=eyJ2IjoiMSJ9.U2nU8KqquHMm3ZL5mYOABQ3S80yzC0uREtFxX3VT4JKMC2KuK1hkE-ArtOAvO6SmcL3cChaz2OY3SpGHTKIDFegQ2rutvVvvrVBp8mtqpVAxgC8Lo9na0d6wgi6Jt8LRl2cu3jzjh9nVj5HcLZX8d388x8Wx928o87Bu8wvAxRs.EGdrnBzAu46gP4bn2r2QhNiGkdmi7fnkzrVS-fAq2DE&dib_tag=se&m=A3L7SUC7OV4IPG&nsdOptOutParam=true&qid=1773205353&s=merchant-items&sr=1-42&xpid=rWe1NtCf1gL0p" target="_blank" style="text-decoration:none;">
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="https://m.media-amazon.com/images/I/810QfWHO4OL._AC_UY327_FMwebp_QL65_.jpg">
+</div>
+
+<div class="book-title">
+CHANAKYA - CHAKRA THE ART OF SUCCESS AND GOVERNANCE
+</div>
+
+<div class="book-author">
+Vijaylaxmi Bhardwaj
+</div>
+
+</div>
+
+</a>
+
+<!-- BOOK 2 -->
+
+<a href="https://www.amazon.in/Leading-Fear-Saroj-Kumar-Bharati/dp/B0G26J3D1S/ref=sr_1_24?dib=eyJ2IjoiMSJ9.xaQ4P7jUWj4PhofhQy7Fp0YIgTAE9HIKWmG6OoUcGuR5nSJ55atkr9gnnXGy5JXkvhPNog2NLa38efjlAZVCoptqF_e6bHCbid4tOSEKrFer-363YPpPPg16-wAZEZ-dzXx55sWV6R9-ogi7zrLxdb_6DkseiHXYxM75M4Y7VJE.ZvMQfDwMIqvQckxZh1jgdOpr7UQ4J-9oFRHzX6ojYT0&dib_tag=se&m=A3L7SUC7OV4IPG&nsdOptOutParam=true&qid=1773206493&s=merchant-items&sr=1-24&xpid=cRlNUE28DQPxL" target="_blank" style="text-decoration:none;">
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="https://m.media-amazon.com/images/I/715LzoUK6NL._AC_UY327_FMwebp_QL65_.jpg">
+</div>
+
+<div class="book-title">
+Leading With No Fear
+</div>
+
+<div class="book-author">
+Mr Saroj Kumar Ojha & Mrs Bharati Ojha
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
