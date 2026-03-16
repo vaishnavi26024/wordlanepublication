@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Lane Publication</title>
+    <link rel="stylesheet" href="GetPublished.css">
+</head>
+
+<body>
+    <a href="for-writers.html" style="position: absolute; top: 20px; left: 20px; font-size: 2.5rem; color: white; text-decoration: none; font-weight: bold; z-index: 1000;">←</a>
+
+    <div class="gs-page">
+
+        <!-- HERO SECTION -->
+        <section class="gs-hero">
+
+            <div class="gs-hero-left">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="writer">
+            </div>
+
+            <div class="gs-hero-right">
+
+                <h1>
+                    Publish your book with <br>
+                    Word Lane Publication Pvt. Ltd.
+                </h1>
+                <form class="gs-form" id="publishForm">
+
+                    <input type="text" placeholder="Name" name="name" required pattern="[A-Za-z ]{3,}"
+                        title="Enter valid name" />
+
+                    <input type="email" placeholder="Email" name="email" required />
+
+                    <input type="password" placeholder="Password" name="password" required minlength="6" />
+
+                    <input type="tel" placeholder="+91 Phone Number" name="phone" required pattern="[0-9]{10}"
+                        title="Enter 10 digit number" />
+
+                    <label class="gs-check">
+                        <input type="checkbox" required>
+                        Get publishing updates on WhatsApp
+                    </label>
+
+                    <button type="submit" class="gs-btn">
+                        PUBLISH MY BOOK
+                    </button>
+
+                </form>
+
+                <div class="gs-features">
+                    <span>✔ Publish Print & eBook</span>
+                    <span>✔ Worldwide Distribution</span>
+                    <span>✔ 100% Rights</span>
+                    <span>✔ Earn More on Every Sale</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="faq-section">
+
+            <h2 class="faq-title">Frequently asked questions</h2>
+            <p class="faq-sub">
+                Can't find what you are looking for? Drop an email to
+                <a href="#">wordlanepublication@gmail.com</a>
+            </p>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <div class="faq-question">What is Word Lane Publication?</div>
+                    <div class="faq-answer">
+                        Word Lane Publication is a publishing platform for authors from around the world.
+                        We make it easy for you to create, publish and distribute your book.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Who owns the rights to my book?</div>
+                    <div class="faq-answer">
+                        You retain all the rights to your book. We help distribute your book through our partners.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is an ISBN and will my book get an ISBN number?</div>
+                    <div class="faq-answer">
+                        ISBN stands for International Standard Book Number. It is a 13-digit number used to identify
+                        books.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I track how many books I've sold?</div>
+                    <div class="faq-answer">
+                        Yes. You can track your book sales and earnings from the author dashboard.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I set the selling price of my book?</div>
+                    <div class="faq-answer">
+                        You can decide the selling price based on production cost and your expected profit.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How many copies of my book will you print?</div>
+                    <div class="faq-answer">
+                        Books are printed using Print-on-Demand technology to ensure availability without large
+                        inventory.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Will I receive post-publishing support?</div>
+                    <div class="faq-answer">
+                        Yes. We provide continuous support to authors even after the book is published.
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- MISSION -->
+        <section class="gs-mission">
+
+            <div class="gs-mission-container">
+
+                <div class="gs-mission-text">
+                    <h2>Our Mission</h2>
+                    <p>
+                        Our mission is to put the power of publishing into everyones hands.
+
+                        We're building a new way for writers and readers to connect online and offline, and help authors
+                        achieve their dreams with the freedom and flexibility that they deserve.
+                    </p>
+                </div>
+
+                <div class="gs-mission-grid">
+                    <div class="card">Publish as Paperback & eBook</div>
+                    <div class="card">Get ISBN Worldwide</div>
+                    <div class="card">Control pricing</div>
+                    <div class="card">Update anytime</div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="as-section">
+
+            <p class="as-sub">
+                Join an amazing community of authors creating history
+            </p>
+
+            <h2 class="as-title">
+                Our <span>40,000+</span> authors have sold books worth
+                <br>
+                over INR <span>50+ crores</span>
+            </h2>
+
+            <div class="as-controls">
+                <button onclick="prevSlide()">‹</button>
+                <button onclick="nextSlide()">›</button>
+            </div>
+
+
+            <div class="as-slider">
+                <div class="as-track" id="sliderTrack">
+
+                    <!-- ORIGINAL -->
+                    <div class="as-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1926_Rabindrath_Tagore.jpg/500px-1926_Rabindrath_Tagore.jpg"
+                            alt="">
+                        <div class="as-name">Rabindranath Tagore</div>
+                    </div>
+
+                    <div class="as-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Chetan_bhagat_1.jpg/250px-Chetan_bhagat_1.jpg"
+                            alt="">
+                        <div class="as-name">Chetan Bhagat</div>
+                    </div>
+
+                    <div class="as-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Arundhati_Nag.jpg/500px-Arundhati_Nag.jpg"
+                            alt="Arundhati Roy">
+                        <div class="as-name">Arundhati Roy</div>
+                    </div>
+
+                    <div class="as-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/RK_Narayan_2009_stamp_of_India.jpg/250px-RK_Narayan_2009_stamp_of_India.jpg"
+                            alt="R.K. Narayan">
+                        <div class="as-name">R.K. Narayan</div>
+                    </div>
+
+                    <div class="as-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Amish_with_his_books_2020.jpg/500px-Amish_with_his_books_2020.jpg"
+                            alt="Amish Tripathi">
+                        <div class="as-name">Amish Tripathi</div>
+                    </div>
+
+                    <div class="as-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sudha_Murty_at_Jaipur_Literature_Festival_2026_01.jpg/500px-Sudha_Murty_at_Jaipur_Literature_Festival_2026_01.jpg"
+                            alt="">
+                        <div class="as-name">Sudha Murty</div>
+                    </div>
+
+                    <!-- DUPLICATE -->
+                    <div class="as-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1926_Rabindrath_Tagore.jpg/500px-1926_Rabindrath_Tagore.jpg"
+                            alt="">
+                        <div class="as-name">Rabindranath Tagore</div>
+                    </div>
+
+                    <div class="as-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Chetan_bhagat_1.jpg/250px-Chetan_bhagat_1.jpg"
+                            alt="">
+                        <div class="as-name">Chetan Bhagat</div>
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+
+    </section>
+
+
+    <!-- STEPS -->
+    <section class="gs-steps">
+
+        <h2>
+            Go from writer to author in <br>
+            <span>just 3 easy steps</span>
+        </h2>
+
+        <div class="gs-step-grid">
+
+            <div class="step-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="">
+                <h3>Design your book</h3>
+                <p>
+                    Design your book cover and interiors in minutes with
+                    easy-to-use tools and templates.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3145/3145765.png" alt="">
+                <h3>Publish as Paperback and eBook</h3>
+                <p>
+                    Reach a wider audience by publishing in both paperback
+                    and eBook formats.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="">
+                <h3>Distribute worldwide</h3>
+                <p>
+                    Sell across 150+ countries with our global
+                    distribution network.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="premium-section">
+
+        <div class="premium-container">
+
+            <div class="premium-left">
+                <h2>Go Premium and Outpublish</h2>
+                <p>
+                    Outpublish is a hybrid publishing program for writers serious about
+                    creating impact. Get professional guidance plus the freedom of
+                    self-publishing to reach millions of readers.
+                </p>
+
+                <button class="premium-btn">Learn More</button>
+            </div>
+
+            <div class="premium-grid">
+
+                <div class="premium-card">
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e" alt="">
+                    <p>National Best-Seller in Business & Finance</p>
+                </div>
+
+                <div class="premium-card">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="">
+                    <p>Ranked in top marketing books for 3+ years</p>
+                </div>
+
+                <div class="premium-card">
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="">
+                    <p>India's highest crowdfunded book</p>
+                </div>
+
+                <div class="premium-card">
+                    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="">
+                    <p>Sold 1,000+ copies in 7 days</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- TESTIMONIAL -->
+    <section class="gs-testimonial">
+
+        <h2>What Authors Say About Us</h2>
+
+        <div class="gs-test-grid">
+
+            <div class="test">
+                <p>
+                    Publishing was super easy. The team guided me step by step and my book reached global stores within
+                    days.
+                </p>
+                <h4>Sofia Williams</h4>
+                <span>Fiction Author</span>
+            </div>
+
+            <div class="test">
+                <p>
+                    I loved the royalty system and complete control over pricing. Best decision for self publishing.
+                </p>
+                <h4>Daniel James</h4>
+                <span>Business Writer</span>
+            </div>
+
+            <div class="test">
+                <p>
+                    From editing to distribution everything was handled professionally. Highly recommended platform.
+                </p>
+                <h4>Andrea Roy</h4>
+                <span>Poetry Author</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="gs-cta">
+
+        <h2 class="cta-title">Ready to start your Journey?</h2>
+
+        <form class="gs-cta-form" id="ctaForm">
+
+            <input type="text" name="name" placeholder="Name" required minlength="3">
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <input type="password" name="password" placeholder="Password" required minlength="6">
+
+            <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+
+            <button type="submit">PUBLISH MY BOOK</button>
+
+        </form>
+
+    </section>
+
+
+    </div>
+
+
+    <script>
+        document.getElementById("publishForm").addEventListener("submit", function (e) {
+
+            let name = this.name.value.trim();
+            let phone = this.phone.value.trim();
+
+            if (name.length < 3) {
+                alert("Name must be at least 3 characters");
+                e.preventDefault();
+                return;
+            }
+
+            if (!/^[0-9]{10}$/.test(phone)) {
+                alert("Enter valid 10 digit phone number");
+                e.preventDefault();
+                return;
+            }
+
+            alert("Form submitted successfully!");
+
+        });
+
+
+        let index = 0;
+        const track = document.getElementById("sliderTrack");
+        const cardWidth = 240;
+        const totalCards = 6;
+
+        function nextSlide() {
+
+            index++;
+
+            track.style.transition = "0.5s";
+            track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+            if (index === totalCards) {
+
+                setTimeout(() => {
+
+                    track.style.transition = "none";
+                    index = 0;
+                    track.style.transform = `translateX(0px)`;
+
+                }, 500)
+
+            }
+
+        }
+
+        function prevSlide() {
+
+            if (index === 0) {
+                index = totalCards;
+                track.style.transition = "none";
+                track.style.transform = `translateX(-${index * cardWidth}px)`;
+            }
+
+            setTimeout(() => {
+                index--;
+                track.style.transition = "0.5s";
+                track.style.transform = `translateX(-${index * cardWidth}px)`;
+            }, 20)
+
+        }
+
+
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach(item => {
+
+            item.addEventListener("click", () => {
+
+                item.classList.toggle("active");
+
+            });
+
+        });
+
+        <!-- cta -->
+        document.getElementById("ctaForm").addEventListener("submit", function (e) {
+
+            let name = this.name.value.trim();
+            let phone = this.phone.value.trim();
+
+            if (name.length < 3) {
+                alert("Name must be at least 3 characters");
+                e.preventDefault();
+                return;
+            }
+
+            if (!/^[0-9]{10}$/.test(phone)) {
+                alert("Enter valid 10 digit phone number");
+                e.preventDefault();
+                return;
+            }
+
+            alert("Form submitted successfully!");
+
+        });
+
+    </script>
+
+</body>
+
+</html>

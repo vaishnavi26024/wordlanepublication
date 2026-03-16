@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<link rel="stylesheet" href="../css/styles.css">
+
+<style>
+
+body{
+background: radial-gradient(circle at top,#0b2c5f,#031a3a);
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:Arial;
+color:white;
+}
+
+.auth-card{
+width:380px;
+padding:40px;
+border-radius:18px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+.input-group{
+margin-bottom:15px;
+}
+
+.input-group input{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,0.2);
+background:transparent;
+color:white;
+}
+
+.auth-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#4da3ff;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.auth-btn:hover{
+background:#3b82f6;
+}
+
+.link{
+text-align:center;
+margin-top:15px;
+}
+
+.link a{
+color:#4da3ff;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="auth-card">
+
+<h2>Create Account</h2>
+
+<div class="input-group">
+<input type="text" placeholder="Full Name">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="Email Address">
+</div>
+
+<div class="input-group">
+<input type="text" placeholder="Mobile Number">
+</div>
+
+<div class="input-group">
+<input type="password" placeholder="Password">
+</div>
+
+<div class="input-group">
+<input type="password" placeholder="Confirm Password">
+</div>
+
+<button class="auth-btn">Next</button>
+
+<div class="link">
+Already have an account?
+<a href="login.html">Login</a>
+</div>
+
+</div>
+
+</body>
+</html>

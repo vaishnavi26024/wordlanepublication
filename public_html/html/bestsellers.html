@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,19 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background: linear-gradient(135deg, #e9f0f8, #c9d6e8);
             min-height: 100vh;
             padding: 40px 20px;
         }
-        
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
         }
-        
+
         .back-btn {
             display: inline-block;
             padding: 12px 24px;
@@ -34,148 +35,246 @@
             margin-bottom: 30px;
             transition: background 0.3s;
         }
-        
+
         .back-btn:hover {
             background: #0f2870;
         }
-        
+
         .header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin-bottom: 50px;
         }
-        
+
         .header h1 {
             font-size: 3rem;
             color: #1b3fa0;
-            margin-bottom: 10px;
+            margin: 0;
         }
-        
+
+        .back-arrow {
+            font-size: 3rem;
+            color: #1b3fa0;
+            text-decoration: none;
+            transition: transform 0.3s;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .back-arrow:hover {
+            transform: translateX(-5px);
+        }
+
         .books-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
             margin-top: 40px;
         }
-        
+
         .book-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: #00008B;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
             cursor: pointer;
         }
-        
+
         .book-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
         }
-        
+
         .book-image-wrapper {
             width: 100%;
-            height: 400px;
+            height: 280px;
+            background: #F5F5F5;
+            border: 3px solid #B0E0E6;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
         }
-        
+
         .book-image {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             display: block;
         }
-        
+
         .book-info {
             display: none;
         }
-        
+
         .book-title {
             font-size: 1.2rem;
             color: #1b3fa0;
             margin-bottom: 6px;
             font-weight: 600;
         }
-        
+
         .book-author {
             color: #666;
             font-size: 0.95rem;
             margin-bottom: 10px;
         }
-        
+
         .book-price {
             font-size: 1.5rem;
             color: #1b3fa0;
             font-weight: bold;
         }
-        
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
             }
-            
+
             .books-grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 20px;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
             }
-            
+
             .book-image-wrapper {
-                height: 300px;
+                height: 280px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <a href="../index.html?return=publish" class="back-btn">← Back to Home</a>
-        
         <div class="header">
+            <a href="discover-books.html" class="back-arrow">←</a>
             <h1>Bestsellers</h1>
+            <div style="width: 2rem;"></div>
         </div>
-        
+
         <div class="books-grid">
-            <div class="book-card" onclick="window.open('https://amzn.in/d/03zAHFoL', '_blank')">
-                <div class="book-image-wrapper">
-                    <img src="../../images/melancholy.jpeg" alt="Melancholy" class="book-image">
+            <a href="https://www.amazon.in/%E0%A4%B8%E0%A4%A4%E0%A5%8D%E0%A4%AF-%E0%A4%96%E0%A5%8B%E0%A4%9C-%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A5%80-%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A4%B5-%E0%A4%95%E0%A4%82%E0%A4%B5%E0%A4%B0/dp/B0DBRH72NL"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/8154E6fn4eL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="सत्य की खोज" class="book-image">
+                    </div>
                 </div>
-                <div class="book-info">
-                    <h3 class="book-title">Melancholy</h3>
-                    <p class="book-author">by Deepa Sharma</p>
-                    <div class="book-price">₹299</div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A5%9B%E0%A4%A6%E0%A4%97%E0%A5%80-%E0%A4%AE%E0%A5%81%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A5%87-%E0%A4%A8%E0%A4%BE%E0%A4%AE-%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%8F-%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87/dp/B0GL38BP8T"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/81WNG06GgQL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="ज़दगी मुस्कुराने का नाम है जानए कैसे" class="book-image">
+                    </div>
                 </div>
-            </div>
-            
-            <div class="book-card" onclick="window.open('https://amzn.in/d/09Doy9kP', '_blank')">
-                <div class="book-image-wrapper">
-                    <img src="../../images/lessons-mask.jpeg" alt="Lessons Behind The Mask" class="book-image">
+            </a>
+
+            <a href="https://www.amazon.in/LESSONS-BEHIND-MASK-AMBALIKA-BHARADWAJ/dp/B0G544KCFH" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/717ybB1uJCL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="LESSONS BEHIND THE MASK" class="book-image">
+                    </div>
                 </div>
-                <div class="book-info">
-                    <h3 class="book-title">Lessons Behind The Mask</h3>
-                    <p class="book-author">by Ambalika Bharadwaj</p>
-                    <div class="book-price">₹349</div>
+            </a>
+
+            <a href="https://www.amazon.in/shore-Dr-N-Praneetha-Syamson/dp/B0FPRGNHQ9" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/71pQeBAlpAL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="The shore" class="book-image">
+                    </div>
                 </div>
-            </div>
-            
-            <div class="book-card" onclick="window.open('https://amzn.in/d/0cV8HXYD', '_blank')">
-                <div class="book-image-wrapper">
-                    <img src="../../images/aadivichay.jpeg" alt="आदिवोच्य" class="book-image">
+            </a>
+
+            <a href="https://www.amazon.in/MELANCHOLY-DEEPA-SHARMA/dp/B0DRGXGSQ4" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/81x7ZLwA4NL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="MELANCHOLY" class="book-image">
+                    </div>
                 </div>
-                <div class="book-info">
-                    <h3 class="book-title">आदिवोच्य</h3>
-                    <p class="book-author">by अदिति सिन्हा</p>
-                    <div class="book-price">₹399</div>
+            </a>
+
+            <a href="https://www.amazon.in/PREET-Deepjyoti-Deka/dp/B0FPGL3FMG" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/71L-ijuLAlL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="PREET" class="book-image">
+                    </div>
                 </div>
-            </div>
-            
-            <div class="book-card" onclick="window.open('https://amzn.in/d/0dU1zj55', '_blank')">
-                <div class="book-image-wrapper">
-                    <img src="../../images/thelike.jpeg" alt="The Beautiful Life" class="book-image">
+            </a>
+
+            <a href="https://www.amazon.in/Beautiful-Diksha-Harmain-Beshrin-Basheer/dp/B0FMPZW4WG" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/81HomELyDGL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="Beautiful Life" class="book-image">
+                    </div>
                 </div>
-                <div class="book-info">
-                    <h3 class="book-title">The Beautiful Life</h3>
-                    <p class="book-author">by Multiple Authors</p>
-                    <div class="book-price">₹279</div>
+            </a>
+
+            <a href="https://www.amazon.in/You-Are-Far-Away-Me/dp/B0GKPXVTK8" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/81EKQluVmXL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="You Are Far Away From Me" class="book-image">
+                    </div>
                 </div>
-            </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%85%E0%A4%82%E0%A4%9C%E0%A4%BE%E0%A4%A8-%E0%A4%B0%E0%A4%BE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87-%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A5%87%E0%A4%B6-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%A3%E0%A4%BE-%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE%E0%A4%B5%E0%A4%B2%E0%A5%87/dp/B0GNP1MKPN"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/71gGmpB-xCL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="अंजान रास्ते" class="book-image">
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/Words-Winged-Minds-Rakshith-Kesari/dp/B0DZHZ338X" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/81Igc4c+ZbL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="Words of Winged Minds" class="book-image">
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/Liminal-Hours-Orphic-Paracosm-Soumya/dp/B0FLJXJSQ6" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/81Pe8Wq8vLL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="Liminal Hours" class="book-image">
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/Dreamwigns-Bijufa-Yesmin-Nikunja-Sarma/dp/B0FV3QDHKH" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-image-wrapper">
+                        <img src="https://m.media-amazon.com/images/I/816sogcw3nL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="Dreamwigns - Taking the first leap" class="book-image">
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Help Books - Word Lane Publication</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #E8E8E8;
+            color: #333;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+
+        .back-arrow {
+            font-size: 3rem;
+            color: #00008B;
+            text-decoration: none;
+            transition: transform 0.3s;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .back-arrow:hover {
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 0;
+            color: #00008B;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .book-card {
+            background: #00008B;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 280px;
+            background: #F5F5F5;
+            border: 3px solid #B0E0E6;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .book-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            min-height: 40px;
+        }
+
+        .book-author {
+            font-size: 0.85rem;
+            color: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            .books-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" style="justify-content: flex-start; gap: 20px;">
+            <a href="discover-books.html" class="back-arrow">←</a>
+            <div>
+                <h1 style="text-align: left;">Self Help Books</h1>
+                <p style="color: #777; margin-top: 0.5rem;">Explore our collection of self help books</p>
+            </div>
+        </div>
+        <div class="books-grid">
+            <a href="https://www.amazon.in/Life-Between-Existing-Shreya-Srivastava/dp/B0DPSQZWXN" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81HPXXT2C8L._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="Life: Between Existing and Living">
+                    </div>
+                    <div class="book-title">Life: Between Existing and Living</div>
+                    <div class="book-author">Shreya Srivastava</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A5%9B%E0%A4%A6%E0%A4%97%E0%A5%80-%E0%A4%AE%E0%A5%81%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A5%87-%E0%A4%A8%E0%A4%BE%E0%A4%AE-%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%8F-%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87/dp/B0GL38BP8T"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81WNG06GgQL._AC_UL480_QL65_.jpg"
+                            alt="जिंदगी मुस्कुराने का नाम है">
+                    </div>
+                    <div class="book-title">जिंदगी मुस्कुराने का नाम है</div>
+                    <div class="book-author"></div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%AE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%93%E0%A4%82-%E0%A4%95%E0%A5%80-%E0%A4%B8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%8F%E0%A4%81-%E0%A4%89%E0%A4%A8%E0%A4%95%E0%A5%87-%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A4%BE%E0%A4%A8/dp/B0GF3KFMXK"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71snqQPZk3L._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="महिलाओं की समस्याएँ और उनके समाधान">
+                    </div>
+                    <div class="book-title">महिलाओं की समस्याएँ और उनके समाधान</div>
+                    <div class="book-author">Ritu Gopal Bundele</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%B0%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%82-%E0%A4%AC%E0%A4%A2%E0%A4%BC%E0%A4%BE%E0%A4%93-%E0%A4%AA%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B0-%E0%A4%AD%E0%A4%B0%E0%A5%8B%E0%A4%B8%E0%A4%BE-%E0%A4%B8%E0%A4%82%E0%A4%B5%E0%A4%BE%E0%A4%A6/dp/B0GCTPNNQQ"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71UpnviWGpL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="रिश्तों की उम्र बढ़ाओ">
+                    </div>
+                    <div class="book-title">रिश्तों की उम्र बढ़ाओ</div>
+                    <div class="book-author">Meghraj Singh Khalsa</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/LIGHT-END-TUNNEL-Suman-Kumar/dp/B0DQH7T9S9" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71US+CcwhdL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="The Light End of the Tunnel">
+                    </div>
+                    <div class="book-title">The Light End of the Tunnel</div>
+                    <div class="book-author">Suman Kumar</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/7-ways-happy-life-youth/dp/B0FKZB98TB" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81su1rqQ1GL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="7 Ways of Happy Life for Youth">
+                    </div>
+                    <div class="book-title">7 Ways of Happy Life for Youth</div>
+                    <div class="book-author">Meghraj Singh Khalsa</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/LESSONS-BEHIND-MASK-AMBALIKA-BHARADWAJ/dp/B0G544KCFH" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/717ybB1uJCL._AC_UL480_QL65_.jpg"
+                            alt="Lessons Behind the Mask">
+                    </div>
+                    <div class="book-title">Lessons Behind the Mask</div>
+                    <div class="book-author">Ambalika Bharadwa</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/ATTAIN-PEACE-MEGHRAJ-SINGH-KHALSA/dp/B0FHWXSGSW" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81xwdt33ngL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="How to Attain Peace">
+                    </div>
+                    <div class="book-title">How to Attain Peace</div>
+                    <div class="book-author">Meghraj Singh Khalsa</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87-%E0%A4%AE%E0%A4%BF%E0%A4%B2%E0%A5%87%E0%A4%97%E0%A4%BE-%E0%A4%AE%E0%A5%87%E0%A4%98%E0%A4%B0%E0%A4%BE%E0%A4%9C-%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9-%E0%A4%96%E0%A4%BE%E0%A4%B2%E0%A4%B8%E0%A4%BE/dp/B0FCHB86LK"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71SHRln0ERL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="जीवन का आधार">
+                    </div>
+                    <div class="book-title">जीवन का आधार</div>
+                    <div class="book-author">सोनाली चक्रवर्ती</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/SELF-DOUBT-PRIYADARSHI-RAVI/dp/B0DPV49GBK" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71zzp1EbYfL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="SELF DOUBT">
+                    </div>
+                    <div class="book-title">SELF DOUBT</div>
+                    <div class="book-author">Priyadarshi Ravi</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%9C%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A4%97%E0%A5%80-%E0%A4%95%E0%A4%BE%E0%A4%9F%E0%A5%8B-%E0%A4%95%E0%A5%87-%E0%A4%9C%E0%A5%88%E0%A4%B8%E0%A5%80-%E0%A4%AC%E0%A4%A8%E0%A4%BE%E0%A4%93/dp/B0G6X19HBZ"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71g3cyjh7-L._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="मै और मेरे जज्बात">
+                    </div>
+                    <div class="book-title">मै और मेरे जज्बात</div>
+                    <div class="book-author">अलीशा मेराज खान</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%86%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AE%E0%A4%A5%E0%A4%BE-Believe-Yourself-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%A3%E0%A4%BE-%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE%E0%A4%B5%E0%A4%B2%E0%A5%87/dp/B0FQKMXXNW"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/611vf2aUJzL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="आत्मसम्मथा (Believe Yourself)">
+                    </div>
+                    <div class="book-title">आत्मसम्मथा (Believe Yourself)</div>
+                    <div class="book-author">मंगेश श्रावणा सोनावले</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%86%E0%A4%A4%E0%A5%8D%E0%A4%AE-%E0%A4%B8%E0%A4%82%E0%A4%A6%E0%A5%87%E0%A4%B9-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A5%80-%E0%A4%B0%E0%A4%B5%E0%A4%BF/dp/B0DPV49MFB"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81wXs98NRnL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="आत्म-संदेह">
+                    </div>
+                    <div class="book-title">आत्म-संदेह</div>
+                    <div class="book-author">प्रियदर्शी रवि</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%B9%E0%A4%BE%E0%A4%B0-%E0%A4%B8%E0%A5%87-%E0%A4%9C%E0%A5%80%E0%A4%A4-%E0%A4%A4%E0%A4%95-%E0%A4%B8%E0%A4%AB%E0%A4%BC%E0%A4%B0/dp/B0CZDKK6CQ"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71SHRln0ERL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="हार से जीत तक का सफ़र">
+                    </div>
+                    <div class="book-title">हार से जीत तक का सफ़र</div>
+                    <div class="book-author">अलका शर्मा & वैष्णवी राय</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%9C%E0%A5%80%E0%A4%B5%E0%A4%A8-%E0%A4%95%E0%A5%87-%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%B6%E0%A4%95-%E0%A4%95%E0%A4%BE%E0%A4%9C%E0%A4%B2-%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%80/dp/B0CF9M6Q7N"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81Wx2vAZPZL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="जीवन के मार्गदर्शक">
+                    </div>
+                    <div class="book-title">जीवन के मार्गदर्शक</div>
+                    <div class="book-author">काजल कुमारी</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%B8%E0%A5%87-%E0%A4%AE%E0%A4%BE%E0%A4%81-%E0%A4%AE%E0%A5%8B-%E0%A4%86%E0%A4%AC%E0%A4%BF%E0%A4%A6-%E0%A4%B8%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%A6%E0%A5%80%E0%A4%95%E0%A5%80/dp/B0CTTQ9JC8"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/8166K4GudRL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="म से माँ तक">
+                    </div>
+                    <div class="book-title">म से माँ तक</div>
+                    <div class="book-author">Mohd. Abid Siddiqui</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/DREAM-REALITY-MADHAV-VAISNAVI-RAI/dp/B0CLZM4RZB" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81amDQEr+GL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="DREAM VS REALITY">
+                    </div>
+                    <div class="book-title">DREAM VS REALITY</div>
+                    <div class="book-author">Madhav & Vaisnavi Rai</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/Positive-Attitude-RUPALI-KUMARI-MAHANAND/dp/B0CJRBGXMN" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71DwI3FpInL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="The Power of Positive Attitude">
+                    </div>
+                    <div class="book-title">The Power of Positive Attitude</div>
+                    <div class="book-author">Rupali Kumari Mahanand</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/DREAM-WITHOUT-LIMITS-SREE-VARSHINI/dp/B0F3V6QM23" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81ibhzvvt7L._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="DREAM WITHOUT LIMITS">
+                    </div>
+                    <div class="book-title">DREAM WITHOUT LIMITS</div>
+                    <div class="book-author">Dr. Sree Varshini R</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/Journey-Through-Lifes-lessons/dp/B0F3VY9YND" target="_blank"
+                style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/71Y6SbaDEOL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="A Journey Through Life's Lessons">
+                    </div>
+                    <div class="book-title">A Journey Through Life's Lessons</div>
+                    <div class="book-author">Hrithik S</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%A6%E0%A4%BF%E0%A4%B2-%E0%A4%A6%E0%A4%BF%E0%A4%AE%E0%A4%BE%E0%A4%97-%E0%A4%B6%E0%A4%B0%E0%A5%80%E0%A4%B0-%E0%A4%B8%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A5%8B-%E0%A4%9C%E0%A4%AC%E0%A4%BE%E0%A4%AC/dp/B0FL9DKYT3"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81M5lUjt3gL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="दिल दिमाग मन और शरीर के सवालो का जवाब">
+                    </div>
+                    <div class="book-title">दिल दिमाग मन और शरीर के सवालो का जवाब</div>
+                    <div class="book-author">मेघराज सिंह खालसा & अनीता चौधरी</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%B5%E0%A4%BF%E0%A4%B9%E0%A4%BE%E0%A4%A8-%E0%A4%9C%E0%A5%80%E0%A4%A8%E0%A5%87-%E0%A4%95%E0%A5%80-%E0%A4%A8%E0%A4%88-%E0%A4%B6%E0%A5%81%E0%A4%B0%E0%A5%81%E0%A4%86%E0%A4%A4/dp/B0DCSH4LMH"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/8130NEolnqL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="विहान: जीने की नई शुरुआत">
+                    </div>
+                    <div class="book-title">विहान: जीने की नई शुरुआत</div>
+                    <div class="book-author">प्रभात जी कुमार</div>
+                </div>
+            </a>
+
+            <a href="https://www.amazon.in/%E0%A4%85%E0%A4%82%E0%A4%A4%E0%A4%83%E0%A4%B8%E0%A5%8D%E0%A4%A5-Antahstha-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BE-%E0%A4%AA%E0%A4%B0%E0%A4%B6%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%AE-%E0%A4%97%E0%A4%BE%E0%A4%82%E0%A4%B5%E0%A4%95%E0%A4%B0/dp/B0DP49YQVP"
+                target="_blank" style="text-decoration: none;">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://m.media-amazon.com/images/I/81eDmmSe9yL._AC_UY327_FMwebp_QL65_.jpg"
+                            alt="अंतःस्थ / Antahstha / Inner Self">
+                    </div>
+                    <div class="book-title">अंतःस्थ / Antahstha / Inner Self</div>
+                    <div class="book-author">प्राजक्ता परशुराम गांवकर</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

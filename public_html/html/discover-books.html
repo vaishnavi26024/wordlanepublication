@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +12,30 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background: linear-gradient(135deg, #e9f0f8, #c9d6e8);
             min-height: 100vh;
             padding: 40px 20px;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .header {
             text-align: center;
             margin-bottom: 50px;
         }
-        
+
         .header h1 {
             font-size: 3rem;
             color: #1b3fa0;
             margin-bottom: 20px;
         }
-        
+
         .back-btn {
             display: inline-block;
             padding: 12px 24px;
@@ -45,25 +46,25 @@
             margin-bottom: 30px;
             transition: background 0.3s;
         }
-        
+
         .back-btn:hover {
             background: #0f2870;
         }
-        
+
         .content-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
             margin-top: 40px;
         }
-        
+
         .section {
             background: white;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .section h2 {
             color: #1b3fa0;
             font-size: 1.8rem;
@@ -71,7 +72,7 @@
             padding-bottom: 10px;
             border-bottom: 3px solid #1b3fa0;
         }
-        
+
         .section a {
             display: block;
             padding: 12px 0;
@@ -81,51 +82,52 @@
             font-size: 1.1rem;
             transition: all 0.3s;
         }
-        
+
         .section a:hover {
             padding-left: 10px;
             color: #0f2870;
         }
-        
+
         @media (max-width: 768px) {
             .content-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .header h1 {
                 font-size: 2rem;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <a href="../index.html?return=publish" class="back-btn">← Back to Home</a>
-        
+
         <div class="header">
             <h1>Discover Books</h1>
         </div>
-        
+
         <div class="content-grid">
             <div class="section">
                 <h2>Word Lane Picks</h2>
                 <a href="bestsellers.html">Bestsellers</a>
-                <a href="#">Free Shipping</a>
+                <a href="free-shipping.html">Free Shipping</a>
             </div>
-            
+
             <div class="section">
                 <h2>Books by Genre</h2>
-                <a href="#">Literature & Fiction</a>
-                <a href="#">Business, Investing & Management</a>
-                <a href="#">Biographies & Autobiographies</a>
-                <a href="#">Self-Help</a>
-                <a href="#">Poetry</a>
-                <a href="#">History & Politics</a>
-                <a href="#">References & Study Guides</a>
-                <a href="#">Philosophy</a>
-                <a href="#">Health & Fitness</a>
+                <a href="literature-fiction.html">Literature & Fiction</a>
+                <a href="business-investing.html">Business, Investing & Management</a>
+                <a href="biographies-autobiographies.html">Biographies & Autobiographies</a>
+                <a href="self-help.html">Self-Help</a>
+                <a href="poetry.html">Poetry</a>
+                <a href="history-politics.html">History & Politics</a>
+                <a href="philosophy.html">Philosophy</a>
+                <a href="health-fitness.html">Health & Fitness</a>
             </div>
         </div>
     </div>
 </body>
+
 </html>

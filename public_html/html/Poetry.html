@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        body {
+            background: #93c5fd;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+
+        /* CATEGORY BANNER */
+
+        .category-banner {
+            text-align: left;
+            padding: 60px 20px;
+            background: #0A1A3A;
+            margin-bottom: 30px;
+            color: #FFFFFF
+        }
+
+        .category-banner h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category-banner p {
+            color: #777;
+        }
+
+        /* BOOK GRID */
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            padding: 40px 60px;
+        }
+
+        /* BOOK CARD */
+
+        .book-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .book-card h3 {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        .author {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .price {
+            color: black;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="discover-books.html" style="position: absolute; top: 20px; left: 20px; font-size: 2.5rem; color: white; text-decoration: none; font-weight: bold;">←</a>
+    <section class="category-banner">
+        <h1>Poetry</h1>
+        <p>Explore our collection of poetry books</p>
+    </section>
+
+    <section class="books">
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81PNBRJmMeL._AC_UY218_.jpg">
+            <h3>Premdhaage</h3>
+            <p class="author">Mangesh Shravana Sonavale</p>
+            <p class="price">₹99</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/718WHEbOepL._SY342_.jpg">
+            <h3>Mai Jal Ki Dhara, Tu NAdi Kinara</h3>
+            <p class="author">Prof. Dr. Hemalata Kate</p>
+            <p class="price">₹179</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81mE8p1L39L._AC_UY218_.jpg">
+            <h3>Kavita Smaranatalya</h3>
+            <p class="author">Swapnil Gaikwad</p>
+            <p class="price">₹229</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71VUVx6tIOL._AC_UY218_.jpg">
+            <h3>Advitiya</h3>
+            <p class="author">Aditi Sinha</p>
+            <p class="price">₹119</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81NHX-UaUQL._AC_UY218_.jpg">
+            <h3>Maay Marathi</h3>
+            <p class="author">Gourav Kulkarni</p>
+            <p class="price">₹99</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81mnmD2IPPL._AC_UY218_.jpg">
+            <h3>Kavya Mei Sansaar Ki Jhalak</h3>
+            <p class="author">Bhanu Priya Devi</p>
+            <p class="price">₹120</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81-WoIbzJxL._AC_UY218_.jpg">
+            <h3>Kavya Bolti Hai</h3>
+            <p class="author">Bhanu Priya Devi</p>
+            <p class="price">₹120</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81Vp+j41o4L._AC_UY218_.jpg">
+            <h3>Rimjhim Boondein</h3>
+            <p class="author">M S Sonavale</p>
+            <p class="price">₹120</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81xthnEVwVL._AC_UY218_.jpg">
+            <h3>Geeta Rasmani</h3>
+            <p class="author">Vijayalaxmi Bhardwaj</p>
+            <p class="price">₹499</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81lXShFq1zL._AC_UY218_.jpg">
+            <h3>Mai Aur Yaadein</h3>
+            <p class="author">M S Sonavale</p>
+            <p class="price">₹120</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81x0l3q9LKL._AC_UY218_.jpg">
+            <h3>Kavyangan</h3>
+            <p class="author">Abhimanyu Panchal</p>
+            <p class="price">₹124</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81kEdGjsVTL._AC_UY218_.jpg">
+            <h3>Meghdhara</h3>
+            <p class="author">M S Sonavale</p>
+            <p class="price">₹109</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81eJmtY8jZL._SY342_.jpg">
+            <h3>Saptarang</h3>
+            <p class="author">Shreya Wagh</p>
+            <p class="price">₹129</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81Ye5KPMy3L._SY342_.jpg">
+            <h3>Ankahin</h3>
+            <p class="author">Bhanupriya Saahani</p>
+            <p class="price">₹99</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/815+eTJ8v4L._AC_UY218_.jpg">
+            <h3>Kavya Sangam </h3>
+            <p class="author">Rupali Mahanand, Prakash Yadav</p>
+            <p class="price">₹450</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/61d2Dp1GN0L._SY342_.jpg">
+            <h3>Meri Shaam</h3>
+            <p class="author">Deepak Khare</p>
+            <p class="price">₹160</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81EiUTOa8XL._AC_UY218_.jpg">
+            <h3>Kavya Sansar</h3>
+            <p class="author">Bhanu Priya Devi</p>
+            <p class="price">₹115</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71VgXqNrsEL._AC_UY218_.jpg">
+            <h3>Kavya Sandhya</h3>
+            <p class="author">Bhanu Devi</p>
+            <p class="price">₹120</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/714R0c3F1-L._AC_UY218_.jpg">
+            <h3>Meri Priya Kavitayein</h3>
+            <p class="author">.</p>
+            <p class="price">₹230</p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        body {
+            background: #93c5fd;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+
+        /* CATEGORY BANNER */
+
+        .category-banner {
+            text-align: left;
+            padding: 60px 20px;
+            background: #0A1A3A;
+            margin-bottom: 30px;
+            color: #FFFFFF
+        }
+
+        .category-banner h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .category-banner p {
+            color: #777;
+        }
+
+        /* BOOK GRID */
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            padding: 40px 60px;
+        }
+
+        /* BOOK CARD */
+
+        .book-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .book-card h3 {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        .author {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .price {
+            color: black;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="discover-books.html" style="position: absolute; top: 20px; left: 20px; font-size: 2.5rem; color: white; text-decoration: none; font-weight: bold;">←</a>
+    <section class="category-banner">
+        <h1>Philosophy</h1>
+        <p>Explore our collection of philosophy books</p>
+    </section>
+
+    <section class="books">
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81WNG06GgQL._AC_UY218_.jpg">
+            <h3>Jindagi muskurane ka naam hai</h3>
+            <p class="author">Jainab Brandy</p>
+            <p class="price">₹99</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81HomELyDGL._AC_UY218_.jpg">
+            <h3>The Beautiful Life</h3>
+            <p class="author"> Beshrin Basheer Riya jain, Diksha Roa Swati Sinha Hajira Harmain</p>
+            <p class="price">₹149</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81HPXXT2C8L._AC_UY218_.jpg">
+            <h3>Life: Between Existing and Living</h3>
+            <p class="author">Shreya Srivastava</p>
+            <p class="price">₹99</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71fkR9bmUNL._AC_UY218_.jpg">
+            <h3>Jindagi kaato ke jaisi mat banao</h3>
+            <p class="author">Meghraj Sinh Khalsaa </p>
+            <p class="price">₹99</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81su1rqQ1GL._AC_UY218_.jpg">
+            <h3>7 ways of happy life for youth</h3>
+            <p class="author">Meghraj Sinh Khalsaa</p>
+            <p class="price">₹110</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81OjaFGWUaL._AC_UY218_.jpg">
+            <h3>Kaise Milega Sukh</h3>
+            <p class="author">Meghraj Sinh Khalsaa</p>
+            <p class="price">₹99</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71Y6SbaDEOL._AC_UY218_.jpg">
+            <h3>A Journey Through Life's lessons</h3>
+            <p class="author"> Hrithik S</p>
+            <p class="price">₹229</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71lCPKSqMoL._AC_UY218_.jpg">
+            <h3>Safal Jindagi Ka</h3>
+            <p class="author">Sumanpreet Kuar, Swati Sinha</p>
+            <p class="price">₹130</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/817vc-JG3dL._AC_UY218_.jpg">
+            <h3>Humsafar</h3>
+            <p class="author">Deepak Khare</p>
+            <p class="price">₹160</p>
+        </div>
+
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81MQLyOTDLL._AC_UY218_.jpg">
+            <h3>Khushahaal Jindagi ke 7 Raaste</h3>
+            <p class="author">Meghraj Sinh Khalsaa</p>
+            <p class="price">₹110</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/712nxfRFqJL._AC_UY218_.jpg">
+            <h3>Rang Birangi Duniya</h3>
+            <p class="author">Dr. Jyoti Saxena</p>
+            <p class="price">₹160</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71m1sgCpL2L._AC_UY218_.jpg">
+            <h3>Do Ghoont Jindagi Ke</h3>
+            <p class="author">Aakash Sinh Rathoud</p>
+            <p class="price">₹160</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/718ykOm7BLL._AC_UY218_.jpg">
+            <h3>Jeevam Ke Rang</h3>
+            <p class="author">Deepak Khare</p>
+            <p class="price">₹160</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71yurERMS0L._AC_UY218_.jpg">
+            <h3>Pita- Jeevan Ke Aadhar Stambh</h3>
+            <p class="author">Shital Tripathi</p>
+            <p class="price">₹195</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81Wx2vAZPZL._AC_UY218_.jpg">
+            <h3>Jeevan Ke Margadarshak</h3>
+            <p class="author">Kajal Kumari</p>
+            <p class="price">₹82</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81eYU9nJMRL._AC_UY218_.jpg">
+            <h3>Musafir</h3>
+            <p class="author">Deepak Khare</p>
+            <p class="price">₹160</p>
+        </div>
+
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71KjWu+OnbL._AC_UY218_.jpg">
+            <h3>Jeevan Ka Aadhar</h3>
+            <p class="author">Sonali Chakravarti</p>
+            <p class="price">₹120</p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
