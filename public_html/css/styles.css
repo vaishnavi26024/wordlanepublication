@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   min-height: 100vh;
@@ -1551,6 +1545,18 @@ body {
   color: white;
 }
 
+@media (max-width:1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 .footer-column h3.footer-heading {
   font-size: 1.4rem;
   font-weight: 800;
@@ -1593,6 +1599,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  font-size: 15px;
+  color: white;
+  margin: 10px 0;
 }
 
 .contact-email,
@@ -2522,10 +2531,9 @@ body {
 /* HORIZONTAL SCROLL */
 .books-container {
   display: flex;
-  gap: 35px;
+  gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding-bottom: 20px;
 }
 
 .books-container::-webkit-scrollbar {
@@ -2597,10 +2605,6 @@ body {
     padding: 1rem;
   }
 
-  .books-container {
-    width: 250px;
-  }
-
   .book-item {
     flex: 0 0 250px;
   }
@@ -2621,10 +2625,6 @@ body {
     padding: 0.75rem;
   }
 
-  .books-container {
-    width: 200px;
-  }
-
   .book-item {
     flex: 0 0 200px;
   }
@@ -2642,7 +2642,7 @@ body {
 
 @media (max-width: 360px) {
   .books-container {
-    width: 180px;
+    width: 100px;
   }
 
   .book-item {
@@ -2690,8 +2690,6 @@ body {
 }
 
 /* LANGUAGE DROPDOWN */
-/* #CHANGE */
-
 .language-dropdown {
   position: relative;
   cursor: pointer;
@@ -2722,15 +2720,12 @@ body {
 }
 
 /* hidden languages */
-
 .more-languages {
   display: none;
   margin-top: 8px;
 }
 
 /* LANGUAGE DROPDOWN */
-/* #CHANGE */
-
 .language-dropdown {
   position: relative;
   cursor: pointer;
@@ -2757,12 +2752,6 @@ body {
   z-index: 1000;
 }
 
-/*.language-menu div{
-padding:8px;
-cursor:pointer;
-font-size:14px;
-}*/
-
 .language-menu div:hover {
   background: #f0f0f0;
 }
@@ -2772,7 +2761,6 @@ font-size:14px;
 }
 
 /* LANGUAGE DROPDOWN */
-
 .language-dropdown {
   position: relative;
   display: inline-block;
@@ -2864,37 +2852,24 @@ font-size:14px;
 /* POPUP TICKET */
 
 .discover-popup {
-
   position: absolute;
   top: 60px;
   left: 0;
-
   background: linear-gradient(135deg, #e9f0f8, #c9d6e8);
-
   border-radius: 8px;
-
   padding: 25px;
-
   width: 600px;
-
   display: none;
-
   gap: 40px;
-
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-
 }
 
-
 /* SHOW ON HOVER */
-
 .discover-wrapper:hover .discover-popup {
   display: flex;
 }
 
-
 /* COLUMNS */
-
 .popup-column {
   flex: 1;
   text-align: left;
@@ -2918,9 +2893,7 @@ font-size:14px;
   text-decoration: underline;
 }
 
-
 /* WRITER POPUP */
-
 .writer-popup {
   width: 420px;
   flex-direction: column;
@@ -2942,7 +2915,6 @@ font-size:14px;
 }
 
 /* DISCOVER BUTTONS */
-
 .discover-buttons {
   display: flex;
   justify-content: center;
@@ -3065,21 +3037,16 @@ font-size:14px;
 .btn-primary,
 .btn-secondary,
 .discover-btn {
-
   width: 420px;
+  max-width: 420px;
   height: 80px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 18px;
   font-weight: 600;
-
   border-radius: 10px;
-
   cursor: pointer;
-
 }
 
 
@@ -3087,18 +3054,14 @@ font-size:14px;
 
 .cta-buttons,
 .discover-buttons {
-
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 40px;
   margin-top: 30px;
   flex-wrap: wrap;
-
 }
 
-
 /* BUTTON COLORS */
-
 .btn-primary,
 .btn-secondary,
 .discover-btn {
@@ -3138,28 +3101,20 @@ font-size:14px;
 
 .writer-item h4 {
   font-size: 15px;
-  /* smaller title */
   margin-bottom: 4px;
-  /* less space below title */
 }
 
 .writer-item p {
   font-size: 12px;
-  /* smaller description text */
   margin-bottom: 2px;
-  /* less spacing below paragraph */
 }
 
-/* Keep popup above footer */
 .writer-popup {
   max-height: 350px;
-  /* adjust as needed */
   overflow-y: auto;
-  /* scroll if content exceeds */
 }
 
 /* VIDEO HERO SECTION */
-
 .video-section {
   display: flex;
   flex-direction: column;
@@ -3170,7 +3125,6 @@ font-size:14px;
 }
 
 /* video container */
-
 .video-wrapper {
   width: 100%;
   max-width: 650px;
@@ -3260,7 +3214,6 @@ font-size:14px;
 }
 
 /* ARROW STYLE */
-
 .arrow {
   position: absolute;
   top: 40%;
@@ -3681,5 +3634,25 @@ font-size:14px;
 @media (max-width: 600px) {
   .tb-carousel {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:768px) {
+
+  .cta-buttons,
+  .discover-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .discover-btn {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    padding: 18px;
+    font-size: 16px;
   }
 }

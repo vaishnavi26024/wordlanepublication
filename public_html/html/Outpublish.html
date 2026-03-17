@@ -3,199 +3,357 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Outpublish</title>
+    <title>Outpublish</title>
 
-<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Poppins;
+            background: #0A1A3A;
+            color: #FFFFFF;
+        }
+
+        .container {
+            width: 1250px;
+            margin: auto;
+        }
+
+        .hero {
+            padding: 100px 0;
+            background: #0A1A3A;
+        }
+
+        .hero-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-image img {
+            width: 420px;
+        }
+
+        .hero-content h1 {
+            font-size: 40px;
+            color: #FFFFFF;
+        }
+
+        .btn {
+            background: #22C55E;
+            border: none;
+            padding: 20px 35px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .hero-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .outpublish {
+            background: #93c5fd;
+            padding: 80px 0;
+        }
+
+        .outpublish-grid {
+            width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .outpublish-left h2 {
+            color: black;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .outpublish-left p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .outpublish-right h3 {
+            margin-bottom: 40px;
+            color: black;
+        }
+
+        .outpublish-right ul {
+            list-style: none;
+        }
+
+        .outpublish-right li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: black;
+        }
+
+        .check {
+            color: #60A5FA;
+            font-weight: bold;
+        }
+
+        .stats {
+            text-align: center;
+            padding: 70px;
+            background: #0A1A3A;
+        }
+
+        .stats span {
+            color: #3B82F6;
+        }
+
+        .features {
+            padding: 80px;
+            text-align: center;
+            background: #93c5fd;
+            color: black;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .books {
+            padding: 80px;
+            background: #0A1A3A;
+            text-align: center;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        .books-row {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .books-row img {
+            height: 200px;
+            transition: 0.3s;
+        }
+
+        .books-row img:hover {
+            transform: scale(1.08);
+        }
+    </style>
 
 </head>
 
+
 <body>
+    <a href="for-writers.html" style="position: absolute; top: 20px; left: 20px; font-size: 2.5rem; color: white; text-decoration: none; font-weight: bold; z-index: 1000;">←</a>
 
-<!-- HERO -->
+    <!-- HERO -->
 
-<section class="hero">
+    <section class="hero">
 
-<div class="container hero-grid">
+        <div class="container hero-grid">
 
-<div class="hero-image">
-<img src="https://notionpress.com/new-rewamp/images/for_writers/outpublish_banner.webp">
-</div>
+            <div class="hero-image">
+                <img src="https://notionpress.com/new-rewamp/images/for_writers/outpublish_banner.webp">
+            </div>
 
-<div class="hero-content">
+            <div class="hero-content">
 
-<h1>Premium Publishing <br> for Serious Writers</h1>
+                <h1>Premium Publishing <br> for Serious Writers</h1>
 
-<p>
-Experience the guidance of a traditional publishing house
-with the freedom of self-publishing
-</p>
+                <p>
+                    Experience the guidance of a traditional publishing house
+                    with the freedom of self-publishing
+                </p>
 
-<button class="btn">PUBLISH MY BOOK</button>
+                <button class="btn">PUBLISH MY BOOK</button>
 
-<div class="hero-list">
+                <div class="hero-list">
 
-<span>✔ Publish Print & eBook</span>
-<span>✔ Worldwide Distribution</span>
-<span>✔ 100% Rights</span>
-<span>✔ Earn More on Every Sale</span>
+                    <span>✔ Publish Print & eBook</span>
+                    <span>✔ Worldwide Distribution</span>
+                    <span>✔ 100% Rights</span>
+                    <span>✔ Earn More on Every Sale</span>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="outpublish">
-
-<div class="container outpublish-grid">
-
-<div class="outpublish-left">
-
-<h2>What is Outpublish?</h2>
-
-<p>
-The Outpublish program is a hybrid publishing program that gives our writers the best of both worlds - the professional expertise and guidance of traditional publishing along with the freedom of Self-Publishing.
-</p>
-
-<p>
-This program combines two powerful forces to create one great outcome - an innovative, multi-layered approach that provides writers with a platform to get their work out there and be seen by millions.
-</p>
-
-<p>
-In addition to providing all the benefits of traditional publishing (e.g., editorial guidance, design, distribution), Outpublish also allows authors to retain ownership over their work and make money through book sales and even keep 100% of the profits.
-</p>
-
-</div>
+    </section>
 
 
-<div class="outpublish-right">
+    <!-- ABOUT -->
 
-<h3>Outpublish is for you if you are:</h3>
+    <section class="outpublish">
 
-<ul>
+        <div class="container outpublish-grid">
 
-<li>
-<span class="check">✔</span>
-An ambitious writer who wants to create your legacy by publishing the next best-seller
-</li>
+            <div class="outpublish-left">
 
-<li>
-<span class="check">✔</span>
-A subject matter expert who wants to establish your brand as a Thought Leader
-</li>
+                <h2>What is Outpublish?</h2>
 
-<li>
-<span class="check">✔</span>
-An entrepreneur who wants to grow your business and brand through your story
-</li>
+                <p>
+                    The Outpublish program is a hybrid publishing program that gives our writers the best of both worlds
+                    - the professional expertise and guidance of traditional publishing along with the freedom of
+                    Self-Publishing.
+                </p>
 
-<li>
-<span class="check">✔</span>
-A serious writer who wants to create an impact on the world by reaching millions of readers
-</li>
+                <p>
+                    This program combines two powerful forces to create one great outcome - an innovative, multi-layered
+                    approach that provides writers with a platform to get their work out there and be seen by millions.
+                </p>
 
-</ul>
+                <p>
+                    In addition to providing all the benefits of traditional publishing (e.g., editorial guidance,
+                    design, distribution), Outpublish also allows authors to retain ownership over their work and make
+                    money through book sales and even keep 100% of the profits.
+                </p>
 
-</div>
-
-</div>
-
-</section>
+            </div>
 
 
-<!-- AUTHOR STATS -->
+            <div class="outpublish-right">
 
-<section class="stats">
+                <h3>Outpublish is for you if you are:</h3>
 
-<p>Join an amazing community of authors creating history</p>
+                <ul>
 
-<h2>
-Our <span>2,000+ authors</span> have sold books worth
-<span>INR 5+ lakhs</span>
-</h2>
+                    <li><span class="check">✔</span> An ambitious writer who wants to create your legacy by publishing
+                        the next best-seller</li>
 
-</section>
+                    <li><span class="check">✔</span> A subject matter expert who wants to establish your brand as a
+                        Thought Leader</li>
+
+                    <li><span class="check">✔</span> An entrepreneur who wants to grow your business and brand through
+                        your story</li>
+
+                    <li><span class="check">✔</span> A serious writer who wants to create an impact on the world by
+                        reaching millions of readers</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-<!-- FEATURES -->
+    <!-- AUTHOR STATS -->
 
-<section class="features">
+    <section class="stats">
 
-<h1>What it means to Outpublish</h1>
+        <p>Join an amazing community of authors creating history</p>
 
-<div class="feature-grid">
+        <h2>
+            Our <span>2,000+ authors</span> have sold books worth
+            <span>INR 5+ lakhs</span>
+        </h2>
 
-<div class="feature">
-<img src="https://notionpress.com/new-rewamp/images/for_writers/market_research.webp">
-<h4>Market Research</h4>
-<p>Our experts research the market to determine the best strategy.</p>
-</div>
+    </section>
 
-<div class="feature">
-<img src="https://notionpress.com/new-rewamp/images/for_writers/publishing_plan.webp">
-<h4>Publishing Plan</h4>
-<p>Get a personalised publishing plan.</p>
-</div>
 
-<div class="feature">
-<img src="https://notionpress.com/new-rewamp/images/for_writers/expanded_distribution.png">
-<h4>Expanded Distribution</h4>
-<p>Your book reaches over 30,000 stores globally.</p>
-</div>
+    <!-- FEATURES -->
 
-<div class="feature">
-<img src="https://notionpress.com/new-rewamp/images/for_writers/publish_in_all_formats.webp">
-<h4>Publish in all formats</h4>
-<p>Print and eBook publishing.</p>
-</div>
+    <section class="features">
 
-<div class="feature">
-<img src="https://notionpress.com/new-rewamp/images/for_writers/premium_cover_interior_design.webp">
-<h4>Premium Cover Design</h4>
-<p>Professional designers build your cover.</p>
-</div>
+        <h1>What it means to Outpublish</h1>
 
-<div class="feature">
-<img src="https://notionpress.com/new-rewamp/images/for_writers/premium_cover_interior_design.webp">
-<h4>Book Marketing</h4>
-<p>Marketing experts promote your book.</p>
-</div>
+        <div class="feature-grid">
 
-</div>
+            <div class="feature">
+                <img src="https://notionpress.com/new-rewamp/images/for_writers/market_research.webp">
+                <h4>Market Research</h4>
+                <p>Our experts research the market to determine the best strategy.</p>
+            </div>
 
-</section>
+            <div class="feature">
+                <img src="https://notionpress.com/new-rewamp/images/for_writers/publishing_plan.webp">
+                <h4>Publishing Plan</h4>
+                <p>Get a personalised publishing plan.</p>
+            </div>
 
-<!-- BOOKS -->
+            <div class="feature">
+                <img src="https://notionpress.com/new-rewamp/images/for_writers/expanded_distribution.png">
+                <h4>Expanded Distribution</h4>
+                <p>Your book reaches over 30,000 stores globally.</p>
+            </div>
 
-<section class="books">
+            <div class="feature">
+                <img src="https://notionpress.com/new-rewamp/images/for_writers/publish_in_all_formats.webp">
+                <h4>Publish in all formats</h4>
+                <p>Print and eBook publishing.</p>
+            </div>
 
-<h2>Outpublish has produced thousands of <br>bestsellers across various categories</h2>
+            <div class="feature">
+                <img src="https://notionpress.com/new-rewamp/images/for_writers/premium_cover_interior_design.webp">
+                <h4>Premium Cover Design</h4>
+                <p>Professional designers build your cover.</p>
+            </div>
 
-<br>
+            <div class="feature">
+                <img src="https://notionpress.com/new-rewamp/images/for_writers/premium_cover_interior_design.webp">
+                <h4>Book Marketing</h4>
+                <p>Marketing experts promote your book.</p>
+            </div>
 
-<h4>Some of our top Amazon bestsellers</h4>
-<div class="books-row">
+        </div>
 
-<img src="https://m.media-amazon.com/images/I/81SbcNLrbZL._AC_UL320_.jpg">
-<img src="https://m.media-amazon.com/images/I/81x7ZLwA4NL._AC_UL320_.jpg">
-<img src="https://m.media-amazon.com/images/I/71pQeBAlpAL._AC_UY218_.jpg">
-<img src="https://m.media-amazon.com/images/I/71gGmpB-xCL._AC_UY218_.jpg">
-<img src="https://m.media-amazon.com/images/I/816sogcw3nL._AC_UY218_.jpg">
-<img src="https://m.media-amazon.com/images/I/8154E6fn4eL._AC_UY218_.jpg">
+    </section>
 
-</div>
 
-</section>
+    <!-- BOOKS -->
+
+    <section class="books">
+
+        <h2>Outpublish has produced thousands of <br>bestsellers across various categories</h2>
+
+        <br>
+
+        <h4>Some of our top Amazon bestsellers</h4>
+
+        <div class="books-row">
+
+            <img src="https://m.media-amazon.com/images/I/81SbcNLrbZL._AC_UL320_.jpg">
+            <img src="https://m.media-amazon.com/images/I/81x7ZLwA4NL._AC_UL320_.jpg">
+            <img src="https://m.media-amazon.com/images/I/71pQeBAlpAL._AC_UY218_.jpg">
+            <img src="https://m.media-amazon.com/images/I/71gGmpB-xCL._AC_UY218_.jpg">
+            <img src="https://m.media-amazon.com/images/I/816sogcw3nL._AC_UY218_.jpg">
+            <img src="https://m.media-amazon.com/images/I/8154E6fn4eL._AC_UY218_.jpg">
+
+        </div>
+
+    </section>
 
 </body>
 

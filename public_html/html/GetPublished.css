@@ -722,3 +722,193 @@ body {
     background: rgba(255, 255, 255, .12);
     box-shadow: 0 20px 40px rgba(0, 0, 0, .45);
 }
+
+/* ===================== RESPONSIVE ===================== */
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    /* PREMIUM SECTION */
+    .premium-container {
+        flex-direction: column;
+        padding: 40px 25px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .premium-left {
+        width: 100%;
+    }
+
+    .premium-left h2 {
+        font-size: 30px;
+    }
+
+    .premium-left p {
+        font-size: 14px;
+    }
+
+    .premium-grid {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .premium-card img {
+        width: 100%;
+        height: 160px;
+    }
+
+    /* TESTIMONIAL SECTION */
+    .gs-test-grid {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .test {
+        width: 45%;
+    }
+}
+
+/* MOBILE (ALL FIXES COMBINED) */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* HERO SECTION */
+    .gs-hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .gs-hero-left,
+    .gs-hero-right {
+        width: 100%;
+    }
+
+    .gs-hero-left img {
+        width: 100%;
+    }
+
+    /* FORM */
+    .gs-form {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    /* GLOBAL SECTION SPACING */
+    .gs-page,
+    .gs-mission,
+    .gs-testimonial,
+    .premium-section {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* CONTAINERS */
+    .premium-container,
+    .gs-mission-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* PREMIUM */
+    .premium-container {
+        flex-direction: column;
+        padding: 40px 25px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .premium-left {
+        width: 100%;
+    }
+
+    .premium-left h2 {
+        font-size: 26px;
+    }
+
+    .premium-left p {
+        font-size: 14px;
+    }
+
+    .premium-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .premium-card img {
+        width: 100%;
+        height: 160px;
+    }
+
+    .premium-btn {
+        width: 100%;
+    }
+
+    /* TESTIMONIAL */
+    .gs-test-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .test {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .gs-testimonial h2 {
+        font-size: 28px;
+    }
+
+    /* ===== OUR MISSION (FIXED ONLY HERE) ===== */
+    .gs-mission-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .gs-mission-text {
+        width: 100%;
+    }
+
+    .gs-mission-text h2 {
+        font-size: 28px;
+    }
+
+    .gs-mission-text p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .gs-mission-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .gs-mission-grid .card {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 576px) {
+
+    .premium-left h2 {
+        font-size: 26px;
+    }
+}
+
+/* GLOBAL IMAGE FIX */
+img {
+    max-width: 100%;
+    height: auto;
+}
